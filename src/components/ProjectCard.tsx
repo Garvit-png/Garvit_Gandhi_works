@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <div className="project-tags">
-          {project.tags.map((tag, index) => {
+          {project.tags.map((tag) => {
             const isFollowerTag = tag.includes('Followers')
             return (
               <span 
